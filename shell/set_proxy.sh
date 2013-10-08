@@ -19,20 +19,23 @@ p=$user:$pass@$proxy:$port
 
 sudo apt-get install xclip
 
-echo -e -n "export http_proxy=http://$p
+echo -e -n "
+export http_proxy=http://$p
 export https_proxy=http://$p
 export ftp_proxy=http://$p
 " | xclip -sel clip
 sudo gedit /etc/bash.bashrc
 
-echo -e -n "Acquire::http::proxy \"http://$p\";
+echo -e -n "
+Acquire::http::proxy \"http://$p\";
 Acquire::https::proxy \"http://$p\";
 Acquire::ftp::proxy \"http://$p\";
 Acquire::http::No-Cache \"True\";
 " | xclip -sel clip
 sudo gedit /etc/apt/apt.conf
 
-echo -e -n "http_proxy=http://$p
+echo -e -n "
+http_proxy=http://$p
 https_proxy=https://$p
 ftp_proxy=ftp://$p
 " | xclip -sel clip

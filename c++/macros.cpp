@@ -15,6 +15,8 @@
 #include <string>
 #include <sstream>
 #include <cmath>
+#include <climits>
+#include <new>
 
 using namespace std;
 
