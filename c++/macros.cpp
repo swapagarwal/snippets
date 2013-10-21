@@ -37,7 +37,7 @@ typedef vector<string> VS;
 #define PB push_back
 #define MP make_pair
 
-#define INF (int)1e9
+#define INF (long)1e9
 #define EPS 1e-9
 
 int main()
