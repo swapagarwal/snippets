@@ -17,8 +17,13 @@
 #include <cmath>
 #include <climits>
 #include <new>
+#include <bitset>
+#include <iomanip>
 
 using namespace std;
+
+inline int toInt(string s) {int i;stringstream (s)>>i;return i;}
+inline string toString(int i) {string s;stringstream ss;ss<<i;ss>>s;return s;}
 
 typedef long long LL;
 typedef unsigned long long ULL;
@@ -33,6 +38,7 @@ typedef vector<string> VS;
 #define FORD(i,a,b) for(ULL i=a;i>=b;i--)
 #define REP(i,n) FOR(i,0,n)
 #define ALL(c) (c).begin(), (c).end()
+#define RALL(c) (c).rbegin(), (c).rend()
 #define SORT(c) sort(ALL(c))
 #define PB push_back
 #define MP make_pair
