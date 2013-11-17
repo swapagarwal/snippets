@@ -1,24 +1,5 @@
-#include <iostream>
-#include <fstream>
-#include <cstdio>
-#include <cstring>
-#include <cstdlib>
-#include <cctype>
-#include <algorithm>
-#include <map>
-#include <set>
-#include <list>
-#include <vector>
-#include <queue>
-#include <deque>
-#include <stack>
-#include <string>
-#include <sstream>
-#include <cmath>
-#include <climits>
-#include <new>
-#include <bitset>
-#include <iomanip>
+#include <bits/stdc++.h>
+#define _ ios_base::sync_with_stdio(0);cin.tie(0);
 
 using namespace std;
 
@@ -46,9 +27,7 @@ typedef vector<string> VS;
 #define INF (long)1e9
 #define EPS 1e-9
 
-int main()
-{
-    std::ios_base::sync_with_stdio (false);
+int main(){_
     #ifndef ONLINE_JUDGE
         freopen("input.txt","r",stdin);
     #endif
