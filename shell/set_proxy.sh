@@ -24,7 +24,7 @@ else
     p=$proxy:$port
 fi
 
-sudo apt-get install xclip
+sudo http_proxy=http://$p apt-get install xclip
 
 echo -e -n "
 export http_proxy=http://$p
