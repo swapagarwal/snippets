@@ -11,11 +11,18 @@ echo -n Enter proxy:
 read proxy
 echo -n Enter port:
 read port
-echo -n Enter username:
-read user
-echo -n Enter password:
-read pass
-p=$user:$pass@$proxy:$port
+read -p "Authorization required? [Y/n]" -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    echo -n Enter username:
+    read user
+    echo -n Enter password:
+    read pass
+    p=$user:$pass@$proxy:$port
+else
+    p=$proxy:$port
+fi
 
 sudo apt-get install xclip
 
