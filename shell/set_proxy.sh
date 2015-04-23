@@ -24,8 +24,11 @@ else
     p=$proxy:$port
 fi
 
-sudo http_proxy=http://$p apt-get update
-sudo http_proxy=http://$p apt-get install xclip
+if [ $(dpkg-query -W -f='${Status}' xclip | grep -c "install ok installed") -eq 0 ];
+then
+    sudo http_proxy=http://$p apt-get update
+    sudo http_proxy=http://$p apt-get install xclip
+fi
 
 echo -e -n "
 export http_proxy=http://$p
