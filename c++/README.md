@@ -3,3 +3,4 @@
 + **macros.cpp** contains my template which i use while programming.
 + **power.cpp** calculates (a^e)%mod.
 + **primeMillerRabin.cpp** checks if the number is prime or not (with a probability depending on number of iterations).
++ **random.cpp** returns a random number within a specified interval.
