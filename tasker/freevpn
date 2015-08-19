@@ -1,0 +1,3 @@
+A1: HTTP Get [ Server:Port:http://www.vpnbook.com/freevpn Path: Attributes: Cookies: User Agent: Timeout:10 Mime Type: Output File: Trust Any Certificate:Off ]
+A2: JavaScriptlet [ Code:var password = global('HTTPD').match("Password: *<strong>([^<]*)")[1]; Libraries: Auto Exit:On Timeout (Seconds):45 ]
+A3: Write File [ File:Tasker/freevpn.txt Text:%password Append:Off Add Newline:On ]
