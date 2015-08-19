@@ -1,0 +1,1 @@
+A1: Send Intent [ Action:android.intent.action.VIEW Cat:None Mime Type: Data:ssh://user@host/#alias Extra: Extra: Extra: Package: Class: Target:Activity ]
