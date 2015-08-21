@@ -1,0 +1,2 @@
+A1: HTTP Get [ Server:Port:http://ipinfo.io/json Path: Attributes: Cookies: User Agent: Timeout:10 Mime Type: Output File: Trust Any Certificate:Off ]
+A2: Flash [ Text:%HTTPD Long:Off ]
