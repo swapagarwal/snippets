@@ -1,4 +1,4 @@
-packages=( "autokey-qt" "codeblocks" "eclipse" "gitg" "guake" "idle" "mplayer" "netbeans" "vlc" "xclip" "xdotool" "zsh")
+packages=( "autokey-qt" "cmatrix" "codeblocks" "cowsay" "eclipse" "fortune" "gitg" "guake" "idle" "lolcat" "mplayer" "netbeans" "sl" "vlc" "xclip" "xdotool" "zsh")
 
 for i in "${packages[@]}"
 do
